@@ -2,7 +2,7 @@
 
 ##  İnteraktif Power BI (.pbix) Proje Dosyasını İndirin
 >  **Not:** GitHub'ın 25 MB dosya boyutu kısıtlamaları nedeniyle, tüm canlı verileri içeren, ilişkileri kurulmuş ve tıkır tıkır çalışan orijinal `.pbix` proje dosyası Google Drive'a yüklenmiştir. Aşağıdaki bağlantıdan doğrudan bilgisayarınıza indirip inceleyebilirsiniz:
->  **[Buraya Tıklayarak Orijinal Power BI Proje Dosyasını İndirin](BURAYA_GOOGLE_DRIVE_LINKINI_YAPISTIR)**
+>  **[Buraya Tıklayarak Orijinal Power BI Proje Dosyasını İndirin][https://drive.google.com/drive/folders/1hZ6VlQJoRWic4qatrHRde8rr532Ycf7C?usp=sharing]**
 
 ---
 
