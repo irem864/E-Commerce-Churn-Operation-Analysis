@@ -1,4 +1,4 @@
-### E-Ticaret Müşteri Kaybı (Churn) & Operasyonel Performans Analizi (V2.0)
+### E-Ticaret Müşteri Kaybı (Churn) & Operasyonel Performans Analizi 
 
 ##  İnteraktif Power BI (.pbix) Proje Dosyasını İndirin
 >  **Not:** GitHub'ın 25 MB dosya boyutu kısıtlamaları nedeniyle, tüm canlı verileri içeren, ilişkileri kurulmuş ve tıkır tıkır çalışan orijinal `.pbix` proje dosyası Google Drive'a yüklenmiştir. Aşağıdaki bağlantıdan doğrudan bilgisayarınıza indirip inceleyebilirsiniz:
@@ -55,7 +55,7 @@ Görsellerin ve rapor katmanlarının hatasız çalışması için şu analitik 
 *   ##  İleri Seviye DAX Altyapısı
 
 *   **Tahminleme Tabanlı Müşteri Kayıp Segmentasyonu (Hesaplanmış Sütun):**
-    ```dax
+  
     Churn_Segmenti = 
     VAR SonSiparis = CALCULATE(MAX(olist_orders_dataset[order_purchase_timestamp]), ALL(olist_orders_dataset))
     VAR GecenGun = DATEDIFF(olist_orders_dataset[order_purchase_timestamp], SonSiparis, DAY)
@@ -64,11 +64,11 @@ Görsellerin ve rapor katmanlarının hatasız çalışması için şu analitik 
     IF(GecenGun <= 180, "At Risk", "Churned"))
 
     **Top 5 Grafik Filtre Desteği (Ölçü):**
-    ```dax
+    
     Siparis_Sayisi_Top = DISTINCTCOUNT(olist_orders_dataset[order_id])
     ```
 *   **Lojistik Gecikme Süresi (Tooltip Ölçüsü):**
-    ```dax
+    
     Ortalama_Kargo_Suresi = AVERAGEX(olist_orders_dataset, DATEDIFF(olist_orders_dataset[order_purchase_timestamp], olist_orders_dataset[order_delivered_customer_date], DAY))
     ```
 *   **Aylık Durum Doğrulama (Çizgi Grafik Tooltip Arkası):** Sipariş düşüşü yaşanan aylardaki anomalileri anlık yakalamak için çizgi grafiğin arkasına dinamik `Count of order_status` (İptal oranı takibi) ölçüsü entegre edilmiştir.
