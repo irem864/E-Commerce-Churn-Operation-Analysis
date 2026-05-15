@@ -7,7 +7,7 @@
 ---
 
 ##  Dashboard İnteraktif Yapısı & Arayüz Katmanları
-Bu çalışma, veri-mürekkep oranı (data-ink ratio) optimizasyonlarına uygun, modern SaaS yönetim paneli standartlarında tasarlanmıştır:
+Bu çalışma, veri-mürekkep oranı optimizasyonlarına uygun, modern SaaS yönetim paneli standartlarında tasarlanmıştır:
 
 ### 1. Ana Yönetici Paneli Genel Görünümü
 ![Ana Ekran](dashboard.png)
